@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="methods" name="Failed suite [Parallel Suite]">
+  <listeners>
+    <listener class-name="com.saucelab.report.in.ExtentReport"/>
+    <listener class-name="com.saucelab.retry.in.RetryListener"/>
+  </listeners>
+  <test thread-count="4" parallel="methods" name="Tests(failed)">
+    <classes>
+      <class name="com.saucelab.test.in.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginthepage"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.saucelab.test.in.LoginTest -->
+    </classes>
+  </test> <!-- Tests(failed) -->
+</suite> <!-- Failed suite [Parallel Suite] -->

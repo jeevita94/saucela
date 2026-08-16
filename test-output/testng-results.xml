@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="2" ignored="0" total="3" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-08-16T19:01:00 IST" name="Parallel Suite" finished-at="2026-08-16T19:01:08 IST" duration-ms="8334">
+    <groups>
+    </groups>
+    <test started-at="2026-08-16T19:01:00 IST" name="Tests" finished-at="2026-08-16T19:01:08 IST" duration-ms="8334">
+      <class name="com.saucelab.test.in.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.saucelab.test.in.LoginTest@6a6cb05c]" started-at="2026-08-16T19:01:00 IST" name="setup" finished-at="2026-08-16T19:01:03 IST" duration-ms="2903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="loginthepage()[pri:0, instance:com.saucelab.test.in.LoginTest@6a6cb05c]" started-at="2026-08-16T19:01:03 IST" name="loginthepage" finished-at="2026-08-16T19:01:03 IST" duration-ms="70" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#user\-ame"}
+  (Session info: chrome=151.0.7922.138)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-VURRA98', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63166}, goog:processID: 13056, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 704b432cdf969cce52593c8b97cf9dee
+*** Element info: {Using=id, value=user-ame}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#user\-ame"}
+  (Session info: chrome=151.0.7922.138)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-VURRA98', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63166}, goog:processID: 13056, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 704b432cdf969cce52593c8b97cf9dee
+*** Element info: {Using=id, value=user-ame}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)
+at org.openqa.selenium.By$ById.findElement(By.java:218)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+at com.saucelab.pages.in.LoginPage.loginCredential(LoginPage.java:25)
+at com.saucelab.test.in.LoginTest.loginthepage(LoginTest.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginthepage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucelab.test.in.LoginTest@6a6cb05c]" started-at="2026-08-16T19:01:03 IST" name="tearDown" finished-at="2026-08-16T19:01:03 IST" duration-ms="306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.saucelab.test.in.LoginTest@6a6cb05c]" started-at="2026-08-16T19:01:03 IST" name="setup" finished-at="2026-08-16T19:01:05 IST" duration-ms="1669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="loginthepage()[pri:0, instance:com.saucelab.test.in.LoginTest@6a6cb05c]" started-at="2026-08-16T19:01:05 IST" name="loginthepage" finished-at="2026-08-16T19:01:05 IST" duration-ms="42" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#user\-ame"}
+  (Session info: chrome=151.0.7922.138)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-VURRA98', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63192}, goog:processID: 6788, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c20b01f19cd5fc8b66c751a0543d7135
+*** Element info: {Using=id, value=user-ame}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#user\-ame"}
+  (Session info: chrome=151.0.7922.138)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-VURRA98', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63192}, goog:processID: 6788, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c20b01f19cd5fc8b66c751a0543d7135
+*** Element info: {Using=id, value=user-ame}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)
+at org.openqa.selenium.By$ById.findElement(By.java:218)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+at com.saucelab.pages.in.LoginPage.loginCredential(LoginPage.java:25)
+at com.saucelab.test.in.LoginTest.loginthepage(LoginTest.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginthepage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucelab.test.in.LoginTest@6a6cb05c]" started-at="2026-08-16T19:01:05 IST" name="tearDown" finished-at="2026-08-16T19:01:06 IST" duration-ms="437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.saucelab.test.in.LoginTest@6a6cb05c]" started-at="2026-08-16T19:01:06 IST" name="setup" finished-at="2026-08-16T19:01:07 IST" duration-ms="1851" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginthepage()[pri:0, instance:com.saucelab.test.in.LoginTest@6a6cb05c]" started-at="2026-08-16T19:01:07 IST" name="loginthepage" finished-at="2026-08-16T19:01:07 IST" duration-ms="33" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#user\-ame"}
+  (Session info: chrome=151.0.7922.138)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-VURRA98', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63218}, goog:processID: 21220, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f03357002cc12a6b24b6f5ac3d0d2f0
+*** Element info: {Using=id, value=user-ame}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#user\-ame"}
+  (Session info: chrome=151.0.7922.138)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-VURRA98', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63218}, goog:processID: 21220, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f03357002cc12a6b24b6f5ac3d0d2f0
+*** Element info: {Using=id, value=user-ame}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)
+at org.openqa.selenium.By$ById.findElement(By.java:218)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+at com.saucelab.pages.in.LoginPage.loginCredential(LoginPage.java:25)
+at com.saucelab.test.in.LoginTest.loginthepage(LoginTest.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginthepage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucelab.test.in.LoginTest@6a6cb05c]" started-at="2026-08-16T19:01:08 IST" name="tearDown" finished-at="2026-08-16T19:01:08 IST" duration-ms="317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.saucelab.test.in.LoginTest -->
+    </test> <!-- Tests -->
+  </suite> <!-- Parallel Suite -->
+</testng-results>

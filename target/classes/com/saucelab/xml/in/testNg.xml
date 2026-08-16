@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Test Suite">
+<listeners>
+        <listener class-name="com.saucelab.report.in.ExtentReport"/>
+    </listeners>
+    <test name="Sauce Tests">
+        <classes>
+            <class name="com.saucelab.test.in.LoginTest"/>
+            <class name="com.saucelab.test.in.HomeTest"/>
+        </classes>
+    </test>
+</suite>
