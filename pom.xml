@@ -15,12 +15,7 @@
     <version>YOUR_SELENIUM_VERSION</version>
 </dependency>
 
-<dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>YOUR_TESTNG_VERSION</version>
-    <scope>test</scope>
-</dependency>
+
    <dependency>
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
