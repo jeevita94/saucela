@@ -21,16 +21,13 @@ public class Base {
 	 public void setup() throws IOException {
 		 
 		 WebDriverManager.chromedriver().setup();
-		 //driver = new ChromeDriver();
-			//System.setProperty("webdriver.chrome.driver", "D:\\chromedriver0406265\\chromedriver-win64\\gv.exe");
 		 
-		  //  WebDriver driver = new ChromeDriver();
 		    ChromeOptions options = new ChromeOptions();
 
-	        // Disable Chrome password manager
+	        
 	        options.addArguments("--disable-save-password-bubble");
 
-	        // Disable password manager services
+	      
 	        options.setExperimentalOption("prefs", 
 	            java.util.Map.of(
 	                "credentials_enable_service", false,
@@ -44,7 +41,7 @@ public class Base {
 	        driver.manage().window().maximize();
 		   
 			Configprop con= new Configprop();
-		   // DriverManager.getDriver().get("https://www.saucedemo.com");
+		 
 			
 			DriverManager.getDriver().get(con.getUrl());
 		}

@@ -11,7 +11,7 @@ public class LoginPage {
 	this.driver=driver;
 	}
 	
-	private By Username = By.id("user-ame");
+	private By Username = By.id("user-name");
 	private By password = By.id("password");
 	private By login = By.id("login-button");
 	
